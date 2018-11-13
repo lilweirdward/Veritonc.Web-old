@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:700|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto");
 * {
   border: none;
   box-sizing: border-box;
@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  font-family: "Raleway", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   font-size: 100%;
@@ -19,8 +19,8 @@ body {
 }
 
 h1 {
-  font-family: "Oswald", serif;
-  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 3rem;
   margin-bottom: 0.4em;
   text-align: center;
@@ -42,16 +42,16 @@ a {
   position: relative;
   text-transform: uppercase;
   outline: none;
-  background-color: #37854e;
+  background-color: #26a69a;
   color: white;
-  box-shadow: 0 4px #122b19;
+  box-shadow: 0 4px #0e3e3a;
 }
 .btn:hover {
-  box-shadow: 0 2px #122b19;
+  box-shadow: 0 2px #0e3e3a;
   top: 2px;
 }
 .btn:active {
-  box-shadow: 0 0 #122b19;
+  box-shadow: 0 0 #0e3e3a;
   top: 4px;
 }
 
@@ -104,7 +104,7 @@ a {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #37854e;
+  background: #26a69a;
   content: '';
   opacity: 0;
   transition: height 0.3s, opacity 0.3s, transform 0.3s;
@@ -146,7 +146,8 @@ a {
 }
 .section.home .content .logo {
   display: block;
-  width: 67%;
+  width: 30rem;
+  max-width: 67%;
   margin: 0 auto;
 }
 .section.home .content h1 {
@@ -161,7 +162,7 @@ a {
 }
 @media only screen and (max-width: 481px) {
   .section.home .content h1 {
-    font-size: 2.75rem;
+    font-size: 2.375rem;
   }
 }
 .section.home .content p {
@@ -170,16 +171,17 @@ a {
 }
 .section.home .content form {
   width: 20rem;
-  margin: 0 auto;
+  margin: 3rem auto;
   padding-top: 1.5rem;
 }
 @media only screen and (max-width: 481px) {
   .section.home .content form {
     width: 16rem;
+    margin: 1.25rem auto;
   }
 }
 .section.home .content form input {
-  height: 2rem;
+  height: 2.0125rem;
   width: 60%;
   display: inline-block;
   border-top-left-radius: 1rem;
@@ -187,14 +189,24 @@ a {
   font-size: 1rem;
   padding: 1rem;
 }
+@media only screen and (max-width: 481px) {
+  .section.home .content form input {
+    font-size: 0.875rem;
+  }
+}
 .section.home .content form button {
-  font: 300 1rem "Raleway", serif;
+  font: 300 1rem "Montserrat", sans-serif;
   height: 2rem;
   width: 40%;
   text-align: center;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  background-color: #37854e;
+  background-color: #26a69a;
   color: white;
   cursor: pointer;
+}
+@media only screen and (max-width: 481px) {
+  .section.home .content form button {
+    font-size: 0.875rem;
+  }
 }

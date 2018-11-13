@@ -2,12 +2,12 @@
 @import 'compass/css3/filter';
 @import '../bourbon/bourbon';
 
-@import url('https://fonts.googleapis.com/css?family=Oswald:700|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
 
-$font_header: 'Oswald', serif;
-$font_copy: 'Raleway', serif;
+$font_header: 'Roboto', sans-serif;
+$font_copy: 'Montserrat', sans-serif;
 // $color_prim_1: #15D186;
-$color_prim_1: #37854E;
+$color_prim_1: #26a69a;
 $color_sec_1: #851500;
 $color_black: #221e1f;
 
@@ -45,7 +45,7 @@ body {
 
 h1 {
     font-family: $font_header;
-	font-weight: 700;
+	font-weight: 300;
     font-size: 3rem;
     margin-bottom: 0.4em;
 	text-align: center;
@@ -171,7 +171,8 @@ a {
         transform: translate(-50%, -50%);
         .logo {
             display: block;
-            width: 67%;
+            width: 30rem;
+            max-width: 67%;
             margin: 0 auto;
         }
         h1 {
@@ -182,7 +183,7 @@ a {
                 font-size: 3.5rem;
             }
             @include media-query($large-phone) {
-                font-size: 2.75rem;
+                font-size: 2.375rem;
             }
         }
         p {
@@ -192,19 +193,23 @@ a {
         }
         form {
             width: 20rem;
-            margin: 0 auto;
+            margin: 3rem auto;
             padding-top: 1.5rem;
             @include media-query($large-phone) {
                 width: 16rem;
+                margin: 1.25rem auto;
             }
             input {
-                height: 2rem;
+                height: 2.0125rem;
                 width: 60%;
                 display: inline-block;
                 border-top-left-radius: 1rem;
                 border-bottom-left-radius: 1rem;
                 font-size: 1rem;
                 padding: 1rem;
+                @include media-query($large-phone) {
+                    font-size: 0.875rem;
+                }
             }
             button {
                 font: 300 1rem $font_copy;
@@ -216,6 +221,9 @@ a {
                 background-color: $color_prim_1;
                 color: white;
                 cursor: pointer;
+                @include media-query($large-phone) {
+                    font-size: 0.875rem;
+                }
             }
         }
     }
