@@ -18,17 +18,16 @@ body {
   padding: 0;
 }
 
+ol, ul {
+  text-align: left;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 3rem;
   margin-bottom: 0.4em;
   text-align: center;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .btn {
