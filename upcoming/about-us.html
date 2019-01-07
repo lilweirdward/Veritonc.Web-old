@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <title>VeritOnc | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../content/css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="section header">
+        <a class="logo" href="index.html"><img src="../content/img/logo-white.png" /></a>
+        <div class="hamburger">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    </div>
+    <div class="dropdown">
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="how-it-works.html">How It Works</a>
+        <a class="nav" href="about-us.html">About Us</a>
+        <a class="nav" href="faq.html">Frequently Asked Questions</a>
+    </div>
+    <div id="about" class="section backimg">
+        <div class="container">
+            <h1>About Our Company</h1>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <h1>Who we are</h1>
+            <p>
+                Our founders have been involved in the medical and healthcare industries for several years, 
+                specifically in the business of treating and caring for those dealing with cancer diagnoses. Over 
+                the last year, we noticed a need that was not being affordably met: feedback from trusted 
+                professionals about their diagnosis and recommended treatment.
+            </p>
+            <p>
+                With our expertise and connections to qualified oncologists, we felt an obligation to provide 
+                this option for people who need it. <a class="prim" href="#doctors">Our doctors</a> have years of experience 
+                and can provide that extra layer of confidence that you're getting the best treatment possible.
+            </p>
+        </div>
+    </div>
+    <div class="section grey">
+        <div class="container">
+            <h1>Why choose us?</h1>
+            <p>
+                Because the treatment of cancer is complex, it may be in your best interest to gain a second opinion on 
+                your disease and treatment recommendation.  A second opinion is most useful during a new cancer 
+                diagnosis, a sudden change in diagnosis or when visiting another institution for a second opinion 
+                isn’t physically/financially viable.  
+            </p>
+            <p>
+                We have several different options to best fit your schedule and lifestyle.  We will need your 
+                medical records (that we can collect, or you can provide).  Within 7-10 business days after we have 
+                received your records, your case will be reviewed, a second opinion will be made and you will receive 
+                a document explaining our opinions of your case as well as answers to questions you may have.                      
+            </p>
+        </div>
+    </div>
+    <div id="doctors" class="section primcolor">
+        <div class="container">
+            <h1>Our oncologists</h1>
+            <div class="testimonial">
+                <img class="profile" src="../content/img/mark-waddle.jpg" />
+                <h2>Dr. Mark Waddle</h2>
+                <p>
+                    This service changed my life! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+                    non ipsum in diam molestie hendrerit in et tellus. Suspendisse viverra tristique venenatis. 
+                    Cras dignissim vitae ipsum id congue. Morbi interdum non dui vitae eleifend. Vivamus elementum 
+                    est eget justo scelerisque auctor. Etiam id nulla ante. Proin consequat cursus mollis.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section footer">
+        <div class="container withcolumns">
+            <div class="column6">
+                <div class="row">
+                    <a href="#">Home</a>
+                </div>
+                <div class="row">
+                    <a href="#">Account</a>
+                </div>
+                <div class="row">
+                    <a href="#">Services</a>
+                </div>
+                <div class="row">
+                    <a href="#">About/FAQ</a>
+                </div>
+            </div>
+            <div class="column6">
+                <div class="row">
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="row">
+                    <a href="#">Terms</a>
+                </div>
+                <div class="row">
+                    <a href="#">Contact</a>
+                </div>
+                <div class="row">
+                    <a href="#">Press</a>
+                </div>
+            </div>
+            <img class="logo" src="../content/img/logo-allwhite.png" />
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(".hamburger").click(function() {
+            $(this).toggleClass("is-active");
+            $(".dropdown").toggleClass("is-active");
+        });
+    </script>
+</body>
