@@ -140,6 +140,11 @@ img.profile {
   width: 25%;
   height: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .section.split .image {
+    display: none;
+  }
+}
 .section.split .image.home {
   background-image: url(../img/background-main.jpg);
   background-size: auto 100%;
@@ -149,6 +154,13 @@ img.profile {
   width: 60%;
   margin: 0;
   margin-left: 32.5%;
+}
+@media only screen and (max-width: 768px) {
+  .section.split .container {
+    width: 90%;
+    margin: 0 auto;
+    margin-left: auto;
+  }
 }
 
 .container {
@@ -191,9 +203,21 @@ img.profile {
   width: 20.333333333333%;
   margin: 0 6.5%;
 }
+@media only screen and (max-width: 768px) {
+  .container.withcolumns .column4 {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
 .container.withcolumns .column6 {
   width: 40%;
   margin: 5%;
+}
+@media only screen and (max-width: 768px) {
+  .container.withcolumns .column6 {
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 
 .section.header {
@@ -261,8 +285,18 @@ img.profile {
   left: 0;
   right: 0;
 }
+@media only screen and (max-width: 768px) {
+  .section.home .container {
+    width: 90%;
+  }
+}
 .section.home .container.top {
   top: 20%;
+}
+@media only screen and (max-width: 768px) {
+  .section.home .container.top {
+    top: 10%;
+  }
 }
 .section.home .container.top img.logo {
   display: block;
@@ -272,6 +306,11 @@ img.profile {
 .section.home .container.middle {
   top: 45%;
   color: white;
+}
+@media only screen and (max-width: 768px) {
+  .section.home .container.middle {
+    top: 30%;
+  }
 }
 .section.home .container.middle h1 {
   font-size: 3rem;
@@ -489,6 +528,11 @@ img.profile {
 .section.footer .container.withcolumns {
   width: 33%;
 }
+@media only screen and (max-width: 768px) {
+  .section.footer .container.withcolumns {
+    width: 90%;
+  }
+}
 .section.footer .container.withcolumns img {
   width: 50%;
 }
@@ -496,6 +540,11 @@ img.profile {
 .steps {
   width: 33%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .steps {
+    width: 67%;
+  }
 }
 .steps .step {
   margin: 3rem 0;

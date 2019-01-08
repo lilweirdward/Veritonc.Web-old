@@ -158,6 +158,9 @@ img.profile {
             position: absolute;
             top: 0; left: 0;
             width: 25%; height: 100%;
+            @include media-query($tablet) {
+                display: none;
+            }
             &.home {
                 background-image: url(../img/background-main.jpg);
                 background-size: auto 100%;
@@ -168,6 +171,11 @@ img.profile {
             width: 60%;
             margin: 0;
             margin-left: 32.5%;
+            @include media-query($tablet) {
+                width: 90%;
+                margin: 0 auto;
+                margin-left: auto;
+            }
         }
     }
 }
@@ -208,10 +216,18 @@ img.profile {
         .column4 {
             width: 20.333333333333%;
             margin: 0 6.5%;
+            @include media-query($tablet) {
+                width: 90%;
+                margin: 0 5%;
+            }
         }
         .column6 {
             width: 40%;
             margin: 5%;
+            @include media-query($tablet) {
+                width: 90%;
+                margin: 0 5%;
+            }
         }
     }
 }
@@ -274,8 +290,14 @@ img.profile {
         position: absolute;
         width: 70%;
         left: 0; right: 0;
+        @include media-query($tablet) {
+            width: 90%;
+        }
         &.top {
             top: 20%;
+            @include media-query($tablet) {
+                top: 10%;
+            }
             img.logo {
                 display: block;
                 height: 5rem;
@@ -285,6 +307,9 @@ img.profile {
         &.middle {
             top: 45%;
             color: white;
+            @include media-query($tablet) {
+                top: 30%;
+            }
             h1 {
                 font-size: 3rem;
             }
@@ -507,8 +532,14 @@ img.profile {
     color: white;
     .container.withcolumns {
         width: 33%;
+        @include media-query($tablet) {
+            width: 90%;
+        }
         img {
             width: 50%;
+            // @include media-query($tablet) {
+            //     width: 100%;
+            // }
         }
     }
 }
@@ -516,6 +547,9 @@ img.profile {
 .steps {
     width: 33%;
     margin: 0 auto;
+    @include media-query($tablet) {
+        width: 67%;
+    }
     .step {
         margin: 3rem 0;
         .fas, .instruction {
