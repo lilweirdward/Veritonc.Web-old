@@ -2,42 +2,184 @@
 <head>
     <title>VeritOnc | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="content/css/styles.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41556203-5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-41556203-5');
-    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <div class="section header">
-        <div class="container">
-            <a href="#"><img class="logo" src="content/img/logo-white.png"></a>
-            <button class="btn">Log In</button>
-            <a class="nav" href="#">Contact</a>
-            <a class="nav" href="#">Services</a>
-            <a class="nav" href="#">Our Team</a>
-            <a class="nav" href="#">About</a>
-            <a class="nav active" href="#">Home</a>
-        </div>
-    </div> -->
-    <div class="section home">
-        <div class="content">
-            <img class="logo" src="content/img/logo-white.png">
-            <h1>Under Construction</h1>
-            <p>
-                We're building something special and need just a bit more time. Enter your email and sign up 
-                for updates once we launch!
-            </p>
-            <form action="https://formspree.io/support@veritonc.com" method="POST">
-                <input type="text" name="email" placeholder="Your email" /><button class="button" type="submit">Notify Me</button>
-                <input type="hidden" name="content" 
-                    value="This person is interested in learning more about VeritOnc!" />
-            </form>
+    <div class="section header homepage">
+        <img class="logo" src="content/img/logo-white.png" />
+        <div class="hamburger">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
         </div>
     </div>
+    <div class="dropdown">
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="how-it-works.html">How It Works</a>
+        <a class="nav" href="about-us.html">About Us</a>
+        <a class="nav" href="faq.html">Frequently Asked Questions</a>
+    </div>
+    <div class="section home">
+        <img class="logo" src="content/img/logo-white.png" />
+        <h1>All patients deserve a second opinion</h1>
+        <span><a href="how-it-works.html">Get yours now</a></span>
+        <i class="fas fa-2x fa-angle-double-down"></i>
+    </div>
+    <div class="section primcolor split">
+        <div class="image home"></div>
+        <div class="container">
+            <h1>Expert Second Opinions <br /><small>From the Comfort of Your Home</small></h1>
+            <p>
+                A diagnosis of cancer can be life changing. Many patients desire, and may benefit from, a second opinion. Let VeritOnc provide peace of mind as you embark on your cancer journey. VeritOnc is unique in that it is:
+            </p>
+            <ul>
+                <li>
+                    <strong>Convenient.</strong> Since our system is electronic, there is no need to endure the logistics, waiting, stress, and costs of travelling to another treatment center. 
+                </li>
+                <li> 
+                    <strong>Fast.</strong> From the time records are received, you will have your second opinion within a week, often sooner. There is no longer the risk of delays in care to get a second opinion. 
+                </li>
+                <li>
+                    <strong>Comprehensive.</strong> We don’t just take the time to review your medical record and treatment plan. We make the effort to educate you about your disease and empower you to make the right decision. , Confidential. We take privacy extremely seriously and use industry leading encryption software to protect your health information. 
+                </li>
+                <li>
+                    <strong>Personalized.</strong> We strive to understand your goals of treatment and match you with revolutionary clinical trials, when available. 
+                </li>
+            </ul>
+            <p>
+                    We hope you consider us for your online second opinion and know we are always here ready to serve you and walk with you through your fight against cancer.
+            </p>
+        </div>
+    </div>
+    <div class="section howitworks">
+        <div class="container">
+            <h1>How it works</h1>
+            <div class="steps">
+                <div class="step">
+                    <i class="fas fa-5x fa-user-circle"></i>
+                    <span class="instruction">Create an online VeritOnc account.</span>
+                </div>
+                <div class="step">
+                    <i class="fas fa-5x fa-file-invoice-dollar"></i>
+                    <span class="instruction">Choose the right program for you.</span>
+                </div>
+                <div class="step">
+                    <i class="fas fa-5x fa-notes-medical"></i>
+                    <span class="instruction">Submit the appropriate medical records relating to your cancer diagnosis for review.</span>
+                </div>
+                <div class="step final">
+                    <img class="fas" src="content/img/logo-icon.png" />
+                    <span class="instruction">Receive your second opinion!</span>
+                </div>
+            </div>
+            <a class="button" href="how-it-works.html">Learn More</a>
+            <a class="button" href="https://secure.veritonc.com">Get Started</a>
+        </div>
+    </div>
+    <div class="section black shortcuts">
+        <div class="container withcolumns">
+            <div class="column4">
+                <i class="fas fa-5x fa-globe"></i>
+                <span>Who we are</span>
+                <a class="button" href="about-us.html">About Us</a>
+            </div>
+            <div class="column4">
+                <i class="fas fa-5x fa-hands-helping"></i>
+                <span>What we do</span>
+                <a class="button" href="how-it-works.html">Our Process</a>
+            </div>
+            <div class="column4">
+                <i class="far fa-5x fa-question-circle"></i>
+                <span>Have questions?</span>
+                <a class="button" href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </div>
+    <div class="section grey">
+        <div class="container">
+            <h1>What people are saying</h1>
+            <div class="testimonial">
+                <img class="profile" src="content/img/testimonial-1.jpg" />
+                <h2>John Doe</h2>
+                <p>
+                    This service changed my life! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+                    non ipsum in diam molestie hendrerit in et tellus. Suspendisse viverra tristique venenatis. 
+                    Cras dignissim vitae ipsum id congue. Morbi interdum non dui vitae eleifend. Vivamus elementum 
+                    est eget justo scelerisque auctor. Etiam id nulla ante. Proin consequat cursus mollis.
+                </p>
+            </div>
+            <div class="testimonial">
+                <img class="profile" src="content/img/testimonial-2.jpg" />
+                <h2>Jane Doe</h2>
+                <p>
+                    This service changed my life! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
+                    non ipsum in diam molestie hendrerit in et tellus. Suspendisse viverra tristique venenatis. 
+                    Cras dignissim vitae ipsum id congue. Morbi interdum non dui vitae eleifend. Vivamus elementum 
+                    est eget justo scelerisque auctor. Etiam id nulla ante. Proin consequat cursus mollis.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="section contact">
+        <div class="container withcolumns">
+            <h1>Contact Us</h1>
+            <div class="column6 contact">
+                <form action="https://formspree.io/veritonc19@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your name" />
+                    <input type="text" name="email" placeholder="Your email" />
+                    <textarea name="message" placeholder="Enter your message for VeritOnc here"></textarea>
+                    <button class="button" type="submit"><i class="fas fa-1x fa-share"></i>Send</button>
+                </form>
+            </div>
+            <div class="column6 other">
+                <h2>Other means of contact</h2>
+                <div class="right">
+                    <span class="label">Address</span>
+                    <span>VeritOnc, LLC <br />123 Main St. <br />Louisville, KY 40208</span>
+                </div>
+                <div class="left">
+                    <span class="label">Phone</span>
+                    <span>502-123-4567</span>
+                    <span class="label">Fax</span>
+                    <span>502-765-4321</span>
+                </div>
+                <div class="full">
+                    <span class="label">Email</span>
+                    <span><a href="mailto:veritonc19@gmail.com">veritonc19@gmail.com</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section footer">
+        <div class="container withcolumns">
+            <img class="logo" src="content/img/logo-allwhite.png" />
+            <div class="column12">
+                <div class="row">
+                    &copy; Copyright VeritOnc, 2019
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= $(".primcolor.split").offset().top) {
+                $(".section.header").removeClass("homepage");
+            } else {
+                if (!$(".section.header").hasClass("homepage")) {
+                    $(".section.header").addClass("homepage");
+                }
+            }
+        });
+        $(".hamburger").click(function() {
+            $(this).toggleClass("is-active");
+            $(".dropdown").toggleClass("is-active");
+        });
+    </script>
 </body>
